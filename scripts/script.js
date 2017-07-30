@@ -16,17 +16,8 @@ $("#blog-menu").click(function() {
     }, 2000);
 });
 
-$(document).ready(function() {      
-            $(".blog__slider-toggle--next").click(function() {
-                var duplicate = $("#blog-post-2").clone();
-
-                //
-                $(duplicate).appendTo(".blog__slider");
-
-                $(".blog__slider").animate(, 2000, 'linear', function() {
-                    $("#blog-post-1").remove();
-                }); 
-
-
-            });
-        });
+$("#btn--intro").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#latest").offset().top
+    }, 750);
+});
