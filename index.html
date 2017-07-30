@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BrandLY</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+      <h1 class="visually-hidden">Brand LY</h1>
+      <div class="logo">
+        <a href="#">
+          <img src="img/logo.png" alt="BrandLY">
+        </a>
+      </div>
+      <nav class="page-nav">
+        <ul class="page-nav__list">
+          <li class="page-nav__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="page-nav__item" id="shop">
+            <a href="#latest">Shop</a>
+          </li>
+          <li class="page-nav__item" id="brands">
+            <a href="#catalog">Brands</a>
+          </li>
+          <li class="page-nav__item" id="blog-menu">
+            <a href="#blog">Blog</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#">About</a>
+          </li>
+          <li class="page-nav__item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="intro__content-wrapper">
+        <h2 class="intro__title">Spring / Summer collection</h2>
+        <b>Up to 60% discount on new arrivals</b>
+        <p>Trending new items from creators around the world</p>
+        <a href="#latest" class="btn btn--intro">Shop now</a>
+      </div>
+    </section>
+    <section class="latest" id="latest">
+      <h2 class="latest__title">Latest products</h2>
+      <div class="latest__goods">
+        <div class="latest__goods-item overlay">
+          <a href="#">Men</a>
+        </div>
+        <div class="latest__goods-item overlay">
+          <a href="#">Women</a>
+        </div>
+        <div class="latest__goods-item overlay">
+          <a href="#">Watches</a>
+        </div>
+      </div>
+      <div class="latest__offers">
+        <div class="latest__offers-item">
+          <a href="#">40% off <br>new autumn collection</a>
+        </div>
+        <div class="latest__offers-item">
+          <a href="#">Mega sale on items from spirit collection</a>
+        </div>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <h2 class="catalog__title">Trending items</h2>
+      <article class="catalog-item">
+        <img src="img/jacket.jpg">
+        <div class="catalog-item__description">
+          <h3 class="catalog-item__title">Nathan Stewart jacket</h3>
+          <small>Summer/Autumn collection</small>
+          <p>Classic Nathan Stewart Jacket from his latest collection. This item is loved by many just because of it's simple style. Simple lines, lovely texture, it suits almost everybody. It comes in six different colors, and all sizes.</p>
+          <p><span>Fashion tip:</span><br>With this jacket Nathan Stewart sunglasses go hand in hand</p>
+          <div class="catalog-item__sizes">
+            <input type="radio" name="size" id="size-m">
+            <label for="size-m">M</label>
+            <input type="radio" name="size" id="size-l">
+            <label for="size-l">L</label>
+            <input type="radio" name="size" id="size-xl">
+            <label for="size-xl">XL</label>
+            <input type="radio" name="size" id="size-xxl">
+            <label for="size-xxl">XXL</label>
+          </div>
+          <div class="catalog-item__buttons">
+            <a href="#" class="btn btn--catalog">Shop now</a>  
+            <a href="#" class="btn btn--catalog">Size guide</a>  
+          </div>        
+        </div>
+      </article>
+    </section>
+    <section class="blog" id="blog">
+      <h2 class="blog__title">From the blog</h2>
+      <div class="blog__slider">
+        <article class="blog__slide blog-post" id="blog-post-1">
+          <img src="img/blog-1.jpg">
+          <h3 class="blog-post__title">German fashion wizards</h3>
+          <small>By James Steed | Fashion</small>
+          <p>This week we had a chance of interviewing two creative artista from Germany. These guys are simply amazing at what they do with the Euripean fashion scene and this year at Paris Fashion Week they introdused their new collection.</p>
+          <a href="#" class="btn btn--blog">Read more</a>
+        </article>
+        <article class="blog__slide blog-post" id="blog-post-2">
+          <img src="img/blog-2.jpg">
+          <h3 class="blog-post__title">Anne Stewart's sunglasses</h3>
+          <small>By Mary beard | Trending</small>
+          <p>Just amazing! That is how I can describe this person. So creative, so inspiring. I was watching her create in her small studio in London and I was amazed at how every little detail gets included in her creations...</p>
+          <a href="#" class="btn btn--blog">Read more</a>
+        </article>
+        <button class="blog__slider-toggle blog__slider-toggle--prev" type="button">Prev</button>
+        <button class="blog__slider-toggle blog__slider-toggle--next" type="button">Next</button>
+      </div>
+    </section>
+    <div class="subscribe">
+      <form class="subscribe__form" action="#" method="post">   
+        <div class="subscribe__input-wrapper">
+          <p>Subscribe for our newsletter to receive latest news and offers</p>
+          <input type="email" name="email" id="email">
+          <div class="subscribe__label-wrapper">
+            <label for="email">Email address</label>
+          </div>
+        </div>
+        <button class="btn btn--subscribe" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>
+
